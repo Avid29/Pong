@@ -3,16 +3,20 @@
 
 using Microsoft.UI.Xaml;
 
-namespace Pong
+namespace Pong;
+
+/// <summary>
+/// An empty window that can be used on its own or navigated to within a Frame.
+/// </summary>
+public sealed partial class MainWindow : Window
 {
     /// <summary>
-    /// An empty window that can be used on its own or navigated to within a Frame.
+    /// Gets the pong runner.
     /// </summary>
-    public sealed partial class MainWindow : Window
+    private Pong Pong { get; } = new Pong();
+
+    public MainWindow()
     {
-        public MainWindow()
-        {
-            this.InitializeComponent();
-        }
+        this.InitializeComponent();
     }
 }

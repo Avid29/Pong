@@ -6,6 +6,10 @@
     xmlns:local="using:Pong"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:computesharp="using:ComputeSharp.WinUI"
     mc:Ignorable="d"
     Title="Pong">
+    
+    <computesharp:AnimatedComputeShaderPanel x:Name="PongDisplay" Width="320" Height="200" ShaderRunner="{x:Bind Pong}"
+                                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
 </Window>
