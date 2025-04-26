@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Pong (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Pong (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
